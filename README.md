@@ -732,7 +732,7 @@ Flight profitability : $185000
 
 FLIGHT DEPARTED SUCCESSFULLY
 ==============================
-```text
+````md
 
 El sistema integra múltiples conceptos de programación orientada a objetos:
 
