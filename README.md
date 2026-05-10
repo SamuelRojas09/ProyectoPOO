@@ -160,9 +160,18 @@ classDiagram
         +calculate_required_fuel(hours : double)
     }
 
-    class CommercialPlane
-    class CargoPlane
-    class PrivateJet
+    class CommercialPlane {
+        +business_class_seats : int
+        +economy_seats : int
+    }
+    class CargoPlane {
+        +max_cargo_weight : double
+        +load_cargo()
+    }
+    class PrivateJet {
+        +luxury_level :str
+        +vip_service()
+    }
 
     class Employee {
         +id : str
@@ -594,21 +603,37 @@ Clase base para aviones.
 
 ## CommercialPlane
 
-Avión comercial para pasajeros.
+Avión comercial utilizado para transporte de pasajeros.
+
+### Características
+
+- Alta capacidad de pasajeros.
+- Incluye clases económicas y ejecutivas.
+- Utilizado para vuelos nacionales e internacionales.
 
 ---
 
 ## CargoPlane
 
-Avión de carga.
+Avión especializado en transporte de carga.
+
+### Características
+
+- Gran capacidad de peso.
+- Espacio adaptado para mercancías.
+- Utilizado para transporte logístico y comercial.
 
 ---
 
 ## PrivateJet
 
-Jet privado.
+Jet privado para vuelos exclusivos.
 
----
+### Características
+
+- Baja capacidad de pasajeros.
+- Mayor comodidad y privacidad.
+- Utilizado para vuelos ejecutivos y VIP.
 
 # Sistema financiero
 
