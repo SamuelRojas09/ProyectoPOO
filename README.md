@@ -43,7 +43,7 @@ El sistema debe permitir:
 classDiagram
 
     class Airport {
-        +name : String
+        +name : str
         +baggage_limit : double
         +extra_baggage_fee : double
         +fuel_cost_per_liter : double
@@ -59,10 +59,10 @@ classDiagram
     }
 
     class Passenger {
-        +id : String
-        +name : String
-        +document : String
-        +nationality : String
+        +id : str
+        +name : str
+        +document : str
+        +nationality : str
         +status : PassengerStatus
         +seat_type : SeatType
         +assign_flight(flight : Flight)
@@ -78,42 +78,42 @@ classDiagram
     }
 
     class Baggage {
-        +id : String
+        +id : str
         +weight : double
-        +type : String
+        +type : str
         +get_weight()
     }
 
     class Ticket {
-        +code : String
+        +code : str
         +price : double
-        +seat : String
+        +seat : str
         +status : TicketStatus
         +generate_ticket()
     }
 
     class BoardingPass {
-        +seat : String
-        +gate : String
+        +seat : str
+        +gate : str
         +show_information()
     }
 
     class Route {
-        +origin : String
-        +destination : String
+        +origin : str
+        +destination : str
         +distance : double
         +base_price : double
         +calculate_ticket_price()
     }
 
     class Airline {
-        +code : String
-        +name : String
+        +code : str
+        +name : str
         +calculate_extra_charge(extra_weight : double)
     }
 
     class Flight {
-        +flight_number : String
+        +flight_number : str
         +route : Route
         +date_time : DateTime
         +gate : String
@@ -125,13 +125,13 @@ classDiagram
     }
 
     class FlightDelay {
-        +reason : String
+        +reason : str
         +delay_minutes : int
         +show_delay_information()
     }
 
     class Weather {
-        +condition : String
+        +condition : str
         +temperature : double
         +affects_flight()
     }
@@ -143,13 +143,13 @@ classDiagram
     }
 
     class Runway {
-        +id : String
+        +id : str
         +length : double
         +available : bool
     }
 
     class Airplane {
-        +registration : String
+        +registration : str
         +seat_capacity : int
         +available_seats : int
         +fuel_capacity : double
@@ -165,15 +165,15 @@ classDiagram
     class PrivateJet
 
     class Employee {
-        +id : String
-        +name : String
+        +id : str
+        +name : str
         +age : int
         +salary : double
         +show_information()
     }
 
     class Pilot {
-        +license_number : String
+        +license_number : str
         +flight_hours : double
         +rank : String
         +approve_takeoff()
@@ -202,12 +202,12 @@ classDiagram
     }
 
     class Meal {
-        +type : String
+        +type : str
         +price : double
     }
 
     class Takeoff {
-        +id : String
+        +id : str
         +flight_hours : double
         +income : double
         +operational_costs : double
