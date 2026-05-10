@@ -685,6 +685,54 @@ Crew      : Laura Diaz, Sofia Ruiz
 
 # Solución preliminar
 
+# Solución preliminar
+
+```text
+==============================
+      AIRPORT SYSTEM
+==============================
+
+Passenger registered successfully
+Passenger : Andres Perez
+
+Flight assigned successfully
+Flight    : AV203
+Route     : Bogotá -> Madrid
+
+Checking baggage weight...
+Total baggage weight : 32 kg
+Extra baggage charge : $40
+
+Checking available seats...
+Seat assigned : 14A
+
+Generating boarding pass...
+
+==============================
+BOARDING PASS
+==============================
+Passenger : Andres Perez
+Flight    : AV203
+Seat      : 14A
+Gate      : B2
+Class     : Business
+
+Pilot     : Juan Perez
+Crew      : Laura Diaz, Sofia Ruiz
+
+Checking airplane fuel...
+Fuel status : APPROVED
+
+Weather condition : SUNNY
+Runway assigned : R1
+
+Takeoff approved by Control Tower
+
+Flight profitability : $185000
+
+FLIGHT DEPARTED SUCCESSFULLY
+==============================
+
 El sistema integra múltiples conceptos de programación orientada a objetos:
 
 * Herencia.
